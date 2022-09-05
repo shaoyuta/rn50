@@ -30,10 +30,13 @@ CASE_LIST=" test_resnet50_tensorflow_epyc_accuracy_fp32_inference_ap_real
             test_resnet50_tensorflow_epyc_throughput_fp32_inference_baseline_dummy_pkm
             test_resnet50_tensorflow_epyc_throughput_fp32_inference_mp_dummy
             test_resnet50_tensorflow_epyc_throughput_int8_inference_baseline_dummy
-            test_resnet50_tensorflow_epyc_throughput_int8_inference_mp_dummy
-            test_resnet50_tensorflow_epyc_throughput_fp32_inference_ap_dummy
-            test_resnet50_tensorflow_epyc_throughput_int8_inference_ap_dummy
         "
+
+CASE_LIST2=" test_resnet50_tensorflow_epyc_throughput_fp32_inference_ap_dummy
+            test_resnet50_tensorflow_epyc_throughput_int8_inference_ap_dummy
+            test_resnet50_tensorflow_epyc_throughput_int8_inference_mp_dummy
+        "
+
 
 process_args() {
     while getopts ":d:h" option; do
